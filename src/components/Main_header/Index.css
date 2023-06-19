@@ -1,0 +1,13 @@
+.header{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    padding: 5% 0;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+.header h1{
+    color: white;
+    margin: auto;   
+}
