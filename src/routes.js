@@ -8,7 +8,7 @@ export default function ExactRoutes() {
         <Router>
             <Routes>
                 <Route path='/' Component={Home} />
-                <Route path='/game' Component={Game} />
+                <Route path='/game/:gameId' Component={Game} />
             </Routes>
         </Router>
     );

@@ -22,8 +22,8 @@ function Home() {
 
         try {
             const response = await api.post('/api/v1/game/create-game', data);
-            localStorage.setItem('game', data);
-            navigate("/game", { replace: true });
+            const id = response.data.data.matchId;
+            navigate(`/game/${id}`, { replace: true });
         } catch (err) {
             alert('Insira os dados corretamente e tente novamente!!!');
         }
